@@ -1,0 +1,89 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2f3;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #0072ff;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-bar {
+  background: #00c6ff;
+  display: flex;
+  padding: 10px;
+  gap: 15px;
+}
+
+.menu-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-container {
+  background: white;
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px gray;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button, .button-link {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.red-asterisk::before {
+  content: "* ";
+  color: red;
+}
+
+h2 {
+  text-align: center;
+}

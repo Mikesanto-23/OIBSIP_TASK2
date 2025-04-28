@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Complaint - Electricity Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <span id="welcomeUser">Welcome User</span>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<div class="menu-bar">
+  <a href="home.html">Home</a>
+  <a href="pay_bill.html">Pay Bill</a>
+  <a href="register_complaint.html">Register Complaint</a>
+  <a href="complaint_status.html">Complaint Status</a>
+</div>
+
+<div class="form-container">
+  <h2>Register Complaint/Service</h2>
+  <form id="complaintForm" onsubmit="return registerComplaint()" class="form-grid">
+    <div class="full-width">
+      <label class="red-asterisk">Complaint Type</label>
+      <select required>
+        <option>Billing Related</option>
+        <option>Voltage Related</option>
+        <option>Street Light Related</option>
+        <option>Pole Related</option>
+      </select>
+    </div>
+    <div class="full-width">
+      <label>Category</label>
+      <select required>
+        <option>General</option>
+        <option>Critical</option>
+      </select>
+    </div>
+    <div class="full-width">
+      <label>Contact Person</label>
+      <input type="text" required>
+    </div>
+    <div class="full-width">
+      <label>Landmark</label>
+      <input type="text" required>
+    </div>
+    <div class="full-width">
+      <label>Consumer No</label>
+      <input type="text" maxlength="13" required>
+    </div>
+    <div class="full-width">
+      <label>Problem Description</label>
+      <textarea required></textarea>
+    </div>
+    <div class="full-width">
+      <label>Mobile Number</label>
+      <input type="text" maxlength="10" required>
+    </div>
+    <div class="full-width">
+      <label>Address</label>
+      <textarea required></textarea>
+    </div>
+    <div class="buttons full-width">
+      <button type="submit">Submit Complaint</button>
+      <button type="reset">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

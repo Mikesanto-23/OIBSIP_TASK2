@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment - Electricity Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Payment Details</h2>
+  <form id="paymentForm" onsubmit="return makePayment()" class="form-grid">
+    <div class="full-width">
+      <label class="red-asterisk">Credit Card Number</label>
+      <input type="text" minlength="16" maxlength="16" required>
+    </div>
+    <div class="full-width">
+      <label class="red-asterisk">Card Holder Name</label>
+      <input type="text" minlength="10" required>
+    </div>
+    <div class="full-width">
+      <label class="red-asterisk">Expiry Date</label>
+      <input type="text" placeholder="MM/YY" required>
+    </div>
+    <div class="full-width">
+      <label class="red-asterisk">CVV</label>
+      <input type="text" minlength="3" maxlength="3" required>
+    </div>
+    <div class="buttons full-width">
+      <button type="submit">Make Payment</button>
+    </div>
+  </form>
+  <div id="paymentSuccess" style="display:none; text-align:center; margin-top:20px;">
+    <h3 style="color:green;">Payment Successful!</h3>
+    <a href="#" onclick="downloadReceipt()">Download Receipt</a>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

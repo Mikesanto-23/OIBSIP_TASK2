@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Electricity Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="form-container">
+  <h2>Customer Login</h2>
+  <form id="loginForm" onsubmit="return loginUser()" class="form-grid">
+    <div class="full-width">
+      <label class="red-asterisk">User ID</label>
+      <input type="text" id="userId" required>
+    </div>
+    <div class="full-width">
+      <label class="red-asterisk">Password</label>
+      <input type="password" id="password" required>
+    </div>
+    <div class="buttons full-width">
+      <button type="submit">Login</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
